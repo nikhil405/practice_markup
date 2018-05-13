@@ -1,3 +1,116 @@
+$(document).ready(function(){
+var thehours = new Date().getHours();
+	var themessage;
+	var morning = 'Good morning, Smith';
+	var afternoon = 'Good afternoon, Smith';
+	var evening = 'Good evening, Smith';
+	var night = 'Good night, Smith';
+
+	if (thehours >= 0 && thehours < 12) {
+		themessage = morning; 
+
+	} else if (thehours >= 12 && thehours < 16) {
+		themessage = afternoon;
+
+	} else if (thehours >= 16 && thehours < 19) {
+		themessage = evening;
+
+	}else if (thehours >= 19 && thehours < 24){
+		themessage = night;
+	}
+	$('.grtng').text(themessage);
+
+// <-----Date and time----->
+var date = new Date();
+var n = date.toDateString();
+var time = date.toLocaleTimeString();
+
+document.getElementById('time').innerHTML = n + ' ' + time;
+
+
+});
+
+
+
+/*event.js*/
+
+
+$(document).ready(function(){
+	$("#show").hide();
+	$("#shows").hide();
+	$("#delta").show();
+	$("#delt").mouseover(function(){
+	 	$("#show").show();
+	 	$("#shows").show();
+	 	$("#delta").hide();
+	 });
+	$("#delt").mouseout(function(){
+        $("#show").hide();
+	 	$("#shows").hide();
+	 	$("#delta").show();
+	 });
+	$("#show1").hide();
+	$("#shows1").hide();
+	$("#delta1").show();
+	$("#delt1").mouseover(function(){
+	 	$("#show1").show();
+	 	$("#shows1").show();
+	 	$("#delta1").hide();
+	 });
+	$("#delt1").mouseout(function(){
+        $("#show1").hide();
+	 	$("#shows1").hide();
+	 	$("#delta1").show();
+	 });
+	$("#show2").hide();
+	$("#shows2").hide();
+	$("#delta2").show();
+	$("#delt2").mouseover(function(){
+	 	$("#show2").show();
+	 	$("#shows2").show();
+	 	$("#delta2").hide();
+	 });
+	$("#delt2").mouseout(function(){
+        $("#show2").hide();
+	 	$("#shows2").hide();
+	 	$("#delta2").show();
+	 });
+	$("#show3").hide();
+	$("#shows3").hide();
+	$("#delta3").show();
+	$("#delt3").mouseover(function(){
+	 	$("#show3").show();
+	 	$("#shows3").show();
+	 	$("#delta3").hide();
+	 });
+	$("#delt3").mouseout(function(){
+        $("#show3").hide();
+	 	$("#shows3").hide();
+	 	$("#delta3").show();
+	});
+	
+// 	$("#show").hide();
+// 	$("#shows").hide();
+// 	$("#delta").show();
+// 	$("#delt").mouseover(function(){
+// 	 	$("#show").show();
+// 	 	$("#shows").show();
+// 	 	$("#delta").hide();
+// 	 });
+// 	$("#delt").mouseout(function(){
+//         $("#show").hide();
+// 	 	$("#shows").hide();
+// 	 	$("#delta").show();
+// 	 });
+// $("#delt1".click(function(){
+// 	$("#delt1").remove();
+// });
+});
+
+
+/*cal.js*/
+
+
 var vanillaCalendar = {
   month: document.querySelectorAll('[data-calendar-area="month"]')[0],
   next: document.querySelectorAll('[data-calendar-toggle="next"]')[0],
@@ -130,3 +243,13 @@ window.addEventListener('load', function () {
         disablePastDays: true
       });
     })
+
+
+
+$(document).ready(function(){
+  $('.period').hide();
+    $("#p").click(function(){
+        $(".period").show();
+        $('.single').hide();
+    });
+    });

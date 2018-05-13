@@ -1,19 +1,48 @@
 body {
-    background: url("/home/qwinix/Documents/Hobbes1/Images/5.jpg");
+    background: url("cold Sliced.png");
     }
 section {
     padding: 60px 0;
 }
+.title1{
+    margin-top: 80px;
+    margin-left: 35px;
+}
 .col-xs-8 {
     width:800px;
+    margin-top: 9px;
     }
-/*.event{
-        width: 790px
-}*/
 #nav-home-tab{
 margin-right: 106px;
 }
+.image{
+        margin-left: 558px;
+    margin-top: 35px;
+}
+.img
+{
+    vertical-align: middle;
+    padding: 14px;
+    border: 1px ridge;
+    border-radius: 5px
+}
+.img1
+{
+    vertical-align: middle;
+    padding: 14px;
+    border: 1px ridge;
+    border-radius: 5px
+}
 
+#bgc{
+    background-color: #00008b0a;
+}
+.img2{
+     vertical-align: middle;
+    padding: 14px;
+    border: 1px ridge;
+    border-radius: 5px
+}
 #nav-profile-tab{
 margin-right: 106px;
 }
@@ -116,7 +145,7 @@ margin-right: 106px;
         .event-list > li > .info > .desc {
             padding: 0px 10px;
         }*/
-        .title{
+        .head{
             color:black;
             margin-left:-20px;
             margin-top: 18px;
@@ -167,11 +196,15 @@ margin-right: 106px;
             margin-top: 10px;
              color:black;
             background-color:lightblue ;
+            border-radius: 22px;
         }
         #shows{
             font-size: 20px;
             color:black;
             background-color:lightblue;
+            margin-left: 192px;
+            margin-top: 95px;
+            border-radius: 22px;
         }
         #delt1{
             margin-top: 35px;
@@ -182,11 +215,15 @@ margin-right: 106px;
             margin-top: 10px;
              color:black;
             background-color:lightblue;
+            border-radius: 22px;
         }
         #shows1{
             font-size: 20px;
             color:black;
             background-color:lightblue;
+            margin-left: 192px;
+            margin-top: 95px;
+            border-radius: 22px;
         }
         #delt2{
             margin-top: 35px;
@@ -194,14 +231,18 @@ margin-right: 106px;
         #show2{
             font-size: 20px;
             margin-left: 6px;
-            margin-top: 10px;
+            margin-top: 0px;
              color:black;
             background-color:lightblue;
+            border-radius: 22px;
         }
         #shows2{
             font-size: 20px;
             color:black;
             background-color:lightblue;
+            margin-left: 192px;
+            margin-top: 95px;
+            border-radius: 22px;
         }
         #delt3{
             margin-top: 35px;
@@ -212,10 +253,81 @@ margin-right: 106px;
             margin-top: 10px;
              color:black;
             background-color:lightblue;
+            border-radius: 22px;
         }
         #shows3{
             font-size: 20px;
             color:black;
             background-color:lightblue;
+            margin-left: 192px;
+            margin-top: 95px;
+            border-radius: 22px;
         }
     }
+    .navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.test li {
+    padding:2px;
+    font-size:20px;
+}
+#margin-right{
+    margin-right:25px;
+}
